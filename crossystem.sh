@@ -1,0 +1,34 @@
+#!/bin/bash
+# Created by Nikki
+# Owner of Ferrochrome
+# https://discord.gg/624wVgpf9W
+
+# clear the screen
+prinf "\ec"
+
+# print title and options
+echo "Nikki's crossystem Utility"
+echo "Remember to practice caution while using these tools."
+printf "\n"
+echo "Options"
+printf "\n"
+echo "1: List all parameters and their values."
+echo "2: List a specific parameters value."
+echo "3: Set a parameter."
+# select an option
+read -p "Select an option: " option
+# execute code based on an option
+# list all params
+if [ $option = 1 ]; then
+crossystem
+# get a specific param
+elif [ $option = 2 ]; then
+read -p "Which parameters value would you like to see? " paramchoice
+crossystem $paramchoice
+# set a param
+elif [ $option = 3 ]; then
+read -p "What parameter would you like to set? " paramchoice
+read -p "What value would you like to set the parameter to? " paramval
+echo "Writing parameter..."
+sudo crossystem $paramchoice=$paramval
+fi
