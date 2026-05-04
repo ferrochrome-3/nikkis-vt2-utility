@@ -16,6 +16,9 @@ echo "If you set invalid parameters, you could bootloop or brick your device."
 echo "Please make sure you know what you doing, and check for typos before setting parameters."
 echo "Don't just type shit and pray to allah it works."
 read -p "Continue? (y/n) " ynselection
+if [ $ynselection = y ]; then
+exit
+fi
 
 # infinite loop
 while true; do

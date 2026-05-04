@@ -56,8 +56,6 @@ echo "Running..."
 mount -B /dev/null /tmp/machine-info
 initctl restart ui
 echo Done! Continue with OOBE and you will not enroll. If you do, go to https://discord.crosbreaker.com/ and ask for help.
-else
-exit
 fi
 fi
 elif [ $option = 7 ]; then
