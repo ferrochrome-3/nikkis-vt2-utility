@@ -30,6 +30,7 @@ crossystem
 elif [ $option = 2 ]; then
 read -p "Which parameters value would you like to see? " paramchoice
 crossystem $paramchoice
+printf "\n"
 # set a param
 elif [ $option = 3 ]; then
 read -p "What parameter would you like to set? " paramchoice
