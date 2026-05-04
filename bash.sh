@@ -6,6 +6,8 @@
 # clear the screen
 printf "\ec"
 
+# infinite loop
+while true; do
 # Display title and options
 echo "Nikki's VT-2 Utility"
 printf "\n"
@@ -54,8 +56,6 @@ echo "Running..."
 mount -B /dev/null /tmp/machine-info
 initctl restart ui
 echo Done! Continue with OOBE and you will not enroll. If you do, go to https://discord.crosbreaker.com/ and ask for help.
-else
-exit
 fi
 fi
 elif [ $option = 7 ]; then
@@ -66,3 +66,5 @@ exit
 elif [ $option = 69 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/femboy%20ascii.sh > "femboy ascii.sh" && bash "femboy ascii.sh"
 fi
+# end infinite loop
+done
