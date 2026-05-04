@@ -5,6 +5,11 @@
 
 # clear the screen
 printf "\ec"
+# check for chronos and exit if on chronos
+if [ $USER = "chronos" ]; then
+echo "Please switch to the root user and run the script again."
+exit
+fi
 
 # print title and options
 echo "Nikki's crossystem Utility"
