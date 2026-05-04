@@ -34,12 +34,12 @@ echo Running script...
 sudo bash firmware-util.sh
 # custom gbb
 elif [ $option = 2 ]; then
-curl -LOf https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/gbb.sh
+curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/gbb.sh > gbb.sh && bash gbb.sh
 elif [ $option = 3 ]; then
 curl https://ipinfo.io/json
 printf "\n"
 elif [ $option = 4 ]; then
-curl -LOf https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/tetris.sh | sudo bash
+curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/tetris.sh > tetris.sh && bash tetris.sh
 elif [ $option = 5 ]; then
 curl -sSL https://raw.githubusercontent.com/CriticalHD/Myscripts/refs/heads/main/SAUB | sudo bash
 elif [ $option = 6 ]; then
@@ -53,12 +53,13 @@ if [ $option6yn = y ]; then
 echo "Running..."
 mount -B /dev/null /tmp/machine-info
 initctl restart ui
+echo Done! Continue with OOBE and you will not enroll. If you do, go to https://discord.crosbreaker.com/ and ask for help.
 else
 exit
 fi
 fi
 elif [ $option = 7 ]; then
-curl --LOf https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/crossystem.sh | sudo bash
+curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/crossystem.sh > crossystem.sh && bash crossystem.sh
 elif [ $option = 8 ]; then
 echo "*kaboom*"
 exit
