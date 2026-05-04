@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Created by Nikki
 # Owner of Ferrochrome
 # https://discord.gg/624wVgpf9W
@@ -63,4 +63,6 @@ curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/hea
 elif [ $option = 8 ]; then
 echo "*kaboom*"
 exit
+elif [ $option = 69 ]
+echo placeholder while i get the link for curl
 fi
