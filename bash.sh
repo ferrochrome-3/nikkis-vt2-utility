@@ -17,7 +17,8 @@ echo "3: Show IP Address"
 echo "4: Bash Tetris by dkorolev"
 echo "5: SAUB (Server Auto Update Blocker by CriticalHD)"
 echo "6: Unenroll until next powerwash (by crosbreaker)"
-echo "7: Exit"
+echo "7: crossystem utility"
+echo "8: Exit"
 # select option
 read -p "Select an option: " option
 # execute code based on an option
@@ -56,6 +57,8 @@ exit
 fi
 fi
 elif [ $option = 7 ]; then
+bash crossystem.sh
+elif [ $option = 8 ]; then
 echo "*kaboom*"
 exit
 fi
