@@ -14,6 +14,7 @@ fi
 echo -e "\e[31mWARNING:\e[0m"
 echo "If you set invalid gbb flags, you could brick your device."
 echo "Please make sure you know what you doing, and check for typos before submitting flags."
+echo "Don't just type shit and pray to allah it works."
 read -p "Continue? (y/n) " ynselection
 # the rest
 if [ $ynselection = y ]; then
