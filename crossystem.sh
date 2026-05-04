@@ -17,6 +17,8 @@ echo "Please make sure you know what you doing, and check for typos before setti
 echo "Don't just type shit and pray to allah it works."
 read -p "Continue? (y/n) " ynselection
 
+# infinite loop test
+while true; do
 # print title and options
 echo "Nikki's crossystem Utility"
 echo "Remember to practice caution while using these tools."
@@ -48,3 +50,4 @@ elif [ $option = 4 ]; then
 echo "*kaboom*"
 exit
 fi
+done
