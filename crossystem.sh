@@ -10,6 +10,12 @@ if [ $USER = "chronos" ]; then
 echo "Please switch to the root user and run the script again."
 exit
 fi
+# warning
+echo -e "\e[31mWARNING:\e[0m"
+echo "If you set invalid parameters, you could bootloop or brick your device."
+echo "Please make sure you know what you doing, and check for typos before setting parameters."
+echo "Don't just type shit and pray to allah it works."
+read -p "Continue? (y/n) " ynselection
 
 # print title and options
 echo "Nikki's crossystem Utility"
