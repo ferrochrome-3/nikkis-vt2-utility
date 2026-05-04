@@ -6,6 +6,8 @@
 # clear the screen
 printf "\ec"
 
+# infinite loop
+while true; do
 # Display title and options
 echo "Nikki's VT-2 Utility"
 printf "\n"
@@ -66,3 +68,5 @@ exit
 elif [ $option = 69 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/femboy%20ascii.sh > "femboy ascii.sh" && bash "femboy ascii.sh"
 fi
+# end infinite loop
+done
