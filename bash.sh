@@ -64,5 +64,5 @@ elif [ $option = 8 ]; then
 echo "*kaboom*"
 exit
 elif [ $option = 69 ]
-echo placeholder while i get the link for curl
+curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/femboy%20ascii.sh > "femboy ascii.sh" && bash "femboy ascii.sh"
 fi
