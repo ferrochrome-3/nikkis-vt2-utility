@@ -26,6 +26,7 @@ printf "\n"
 echo "1: List all parameters and their values."
 echo "2: List a specific parameters value."
 echo "3: Set a parameter."
+echo "4: Exit."
 # select an option
 read -p "Select an option: " option
 # execute code based on an option
@@ -43,4 +44,7 @@ read -p "What parameter would you like to set? " paramchoice
 read -p "What value would you like to set the parameter to? " paramval
 echo "Writing parameter..."
 sudo crossystem $paramchoice=$paramval
+elif [ $option = 4 ]; then
+echo "*kaboom*"
+exit
 fi
