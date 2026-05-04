@@ -121,3 +121,4 @@ elif [ $option = 4 ]; then
 echo "*kaboom*"
 exit
 fi
+done
