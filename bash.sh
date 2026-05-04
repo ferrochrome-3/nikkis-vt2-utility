@@ -66,5 +66,3 @@ exit
 elif [ $option = 69 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/femboy%20ascii.sh > "femboy ascii.sh" && bash "femboy ascii.sh"
 fi
-fi
-fi
