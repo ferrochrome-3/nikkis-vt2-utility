@@ -34,12 +34,12 @@ echo Running script...
 sudo bash firmware-util.sh
 # custom gbb
 elif [ $option = 2 ]; then
-curl -sSL https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/gbb.sh
+curl -LOf https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/gbb.sh
 elif [ $option = 3 ]; then
 curl https://ipinfo.io/json
 printf "\n"
 elif [ $option = 4 ]; then
-curl -sSL https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/tetris.sh | sudo bash
+curl -LOf https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/tetris.sh | sudo bash
 elif [ $option = 5 ]; then
 curl -sSL https://raw.githubusercontent.com/CriticalHD/Myscripts/refs/heads/main/SAUB | sudo bash
 elif [ $option = 6 ]; then
@@ -58,7 +58,7 @@ exit
 fi
 fi
 elif [ $option = 7 ]; then
-curl -sSL https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/crossystem.sh | sudo bash
+curl --LOf https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/crossystem.sh | sudo bash
 elif [ $option = 8 ]; then
 echo "*kaboom*"
 exit
