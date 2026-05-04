@@ -4,7 +4,7 @@
 # https://discord.gg/624wVgpf9W
 
 # clear the screen
-prinf "\ec"
+printf "\ec"
 
 # print title and options
 echo "Nikki's crossystem Utility"
