@@ -20,7 +20,8 @@ echo "4: Bash Tetris by dkorolev"
 echo "5: SAUB (Server Auto Update Blocker by CriticalHD)"
 echo "6: Unenroll until next powerwash (by crosbreaker)"
 echo "7: crossystem utility"
-echo "8: Exit"
+echo "8: chromebrick"
+echo "9: Exit"
 # select option
 read -p "Select an option: " option
 # execute code based on an option
@@ -61,6 +62,8 @@ fi
 elif [ $option = 7 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/crossystem.sh > crossystem.sh && bash crossystem.sh
 elif [ $option = 8 ]; then
+echo "put curl command here once pr is merged with main"
+elif [ $option = 9 ]; then
 echo "*kaboom*"
 exit
 elif [ $option = 69 ]; then
