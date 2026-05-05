@@ -62,7 +62,7 @@ fi
 elif [ $option = 7 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/crossystem.sh > crossystem.sh && bash crossystem.sh
 elif [ $option = 8 ]; then
-echo "put curl command here once pr is merged with main"
+curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/chromebrick.sh > chromebrick.sh && bash chromebrick.sh
 elif [ $option = 9 ]; then
 echo "*kaboom*"
 exit
