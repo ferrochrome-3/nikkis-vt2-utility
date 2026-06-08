@@ -66,9 +66,10 @@ echo "Action cancelled, exiting."
 exit
 fi
 # infinite clobber
+# thank you kelsea <3
 elif [ $option = 3 ]; then
 echo "This will put your chromebook into an infinite state of "self repair.""
-echo "I deadass have no idea how to recover from this."
+echo "This can be reverted by flashing recovery media."
 read -p "Continue? (y/n) " opt3yn
 if [ $opt3yn = y ]; then
 echo "Starting the clobber."
