@@ -6,6 +6,6 @@
 <p>Credits:</p>
 <p>Bash Tetris: https://github.com/dkorolev/bash-tetris</p>
 <p>SAUB: CriticalHD</p>
-<p>Unenroll until next exploit: https://discord.crosbreaker.com</p>
+<p>Unenroll until next powerwash: https://discord.crosbreaker.com</p>
 <p>firmware-util.sh: https://mrchromebox.tech</p>
 <p>Custom GBB Flag Writer and crossystem Utility: me :3</p>
