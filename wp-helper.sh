@@ -27,7 +27,26 @@ echo "Your chromebook uses a jumper for WP."
 echo "If you havent already, open up your chromebook and use something to bridge the connection. (Tin foil, a paper clip, or solder if you're feeling fancy.)"
 echo "This script will now run a wp loop that i DEFINITELY didnt steal from sh1mmer to make things easier for you."
 read -N1 -sr -p "Press any key to run the wp loop..."
-# insert sh1mmer wp loop here haha
+# credits to the mercuryworkshop team for this wp loop! https://github.com/MercuryWorkshop/sh1mmer
+set -e
+
+COLOR_RESET="\033[0m"
+COLOR_RED_B="\033[1;31m"
+COLOR_GREEN_B="\033[1;32m"
+
+wp_disable() {
+	while :; do
+		if flashrom --wp-disable; then
+			echo -e "${COLOR_GREEN_B}Success. Note that some devices may need to reboot before the chip is fully writable.${COLOR_RESET}"
+			return 0
+		fi
+		echo -e "${COLOR_RED_B}Press CTRL+C to cancel.${COLOR_RESET}"
+		sleep 1
+	done
+}
+
+trap 'exit 1' INT
+wp_disable
 echo "something something battery sense line"
 echo "Your chromebook uses the battery's sense line to control wp status."
 echo "This means you will have to disconnect the battery and boot from external power (a charger)."
