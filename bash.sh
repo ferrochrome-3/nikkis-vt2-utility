@@ -44,6 +44,9 @@ printf "\n"
 elif [ $option = 4 ]; then
 curl https://raw.githubusercontent.com/ferrochrome-3/nikkis-vt2-utility/refs/heads/main/tetris.sh > tetris.sh && bash tetris.sh
 elif [ $option = 5 ]; then
+echo "Please note: SAUB will brick your chromebook if you return to secure mode with it active."
+echo "The script will continue in 10 seconds. Press ctrl + c to exit."
+sleep 10
 curl -sSL https://raw.githubusercontent.com/CriticalHD/Myscripts/refs/heads/main/SAUB | sudo bash
 elif [ $option = 6 ]; then
 if [ $USER = "chronos" ]; then
